@@ -23,6 +23,15 @@ struct ContentView: View {
                     TextField("Add new Note", text: $text)
                     
                     Button(action: {
+                        // 1. Only run the button's action when the text field is not empty
+                        
+                        // 2. Create a new note item and initialize it the text value
+                        
+                        // 3. Add the new note item to the array (append)
+                        
+                        // 4. Make de text field empty
+                        
+                        // 5. Save the notes (function)
                         
                     }, label: {
                         Image(systemName: "plus.circle")

@@ -37,6 +37,25 @@ struct ContentView: View {
         }
     }
     
+    func load() {
+        DispatchQueue.main.async {
+            do {
+                // 1. Get the Notes URL Path
+                let url = getDocumentDirectory().appendingPathComponent("notes")
+                
+                // 2. Create the new Property for the data
+                let data = try Data(contentsOf: url)
+                
+                // 3. Decode the data
+                notes = try JSONDecoder().decode([Note].self, from: data)
+                
+            } catch {
+                // Do nothing.
+                // Não há problema se não fizer nada. O usuário pode não ter notas.
+            }
+        }
+    }
+    
     // MARK: - Body
     var body: some View {
         NavigationStack {
@@ -75,6 +94,9 @@ struct ContentView: View {
                 Text("\(notes.count)")
             } //: VStack
             .navigationTitle("Notes")
+            .onAppear(perform: {
+                load()
+            })
         } //: Navigation
     }
 }

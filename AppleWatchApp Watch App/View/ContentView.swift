@@ -56,6 +56,13 @@ struct ContentView: View {
         }
     }
     
+    func delete(offsets: IndexSet) {
+        withAnimation {
+            notes.remove(atOffsets: offsets)
+            save()
+        }
+    }
+    
     // MARK: - Body
     var body: some View {
         NavigationStack {
@@ -102,9 +109,11 @@ struct ContentView: View {
                                 .padding(.leading, 5)
                         } //: HStack
                     } //: Loop
+                    .onDelete(perform: delete)
                 } //: List
             } //: VStack
             .navigationTitle("Notes")
+            .navigationBarTitleDisplayMode(.inline)
             .onAppear(perform: {
                 load()
             })

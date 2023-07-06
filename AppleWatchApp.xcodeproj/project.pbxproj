@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2217F8972A56F6DB00DCF078 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217F8962A56F6DB00DCF078 /* DetailView.swift */; };
 		2247D0172A506E530029FFE8 /* AppleWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2247D0162A506E530029FFE8 /* AppleWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2247D01C2A506E530029FFE8 /* AppleWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2247D01B2A506E530029FFE8 /* AppleWatchAppApp.swift */; };
 		2247D01E2A506E530029FFE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2247D01D2A506E530029FFE8 /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2217F8962A56F6DB00DCF078 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2247D0102A506E530029FFE8 /* AppleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2247D0162A506E530029FFE8 /* AppleWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2247D01B2A506E530029FFE8 /* AppleWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchAppApp.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2247D01D2A506E530029FFE8 /* ContentView.swift */,
+				2217F8962A56F6DB00DCF078 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2247D01E2A506E530029FFE8 /* ContentView.swift in Sources */,
+				2217F8972A56F6DB00DCF078 /* DetailView.swift in Sources */,
 				2247D01C2A506E530029FFE8 /* AppleWatchAppApp.swift in Sources */,
 				22574FD62A530EAB00C1D665 /* Note.swift in Sources */,
 			);

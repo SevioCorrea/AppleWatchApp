@@ -18,6 +18,15 @@ struct CreditView: View {
             HeaderView(title: "Credits")
             
             // Content
+            Text("Sévio")
+                .foregroundColor(.primary)
+                .fontWeight(.bold)
+            
+            Text("Developer")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+                .fontWeight(.light)
+            
         } //: VStack
     }
 }

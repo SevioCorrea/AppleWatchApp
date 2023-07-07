@@ -12,6 +12,8 @@ struct DetailView: View {
     let note: Note
     let count: Int
     let index: Int
+    
+    @State private var isCreditPresent: Bool = false
 
     // MARK: - Body
     var body: some View {
@@ -44,6 +46,12 @@ struct DetailView: View {
                 
                 Image(systemName: "info.circle")
                     .imageScale(.large)
+                    .onTapGesture {
+                        isCreditPresent.toggle()
+                    }
+                    .sheet(isPresented: $isCreditPresent, content: {
+                        CreditView()
+                    })
                 
             } //: HStack
             .foregroundColor(.secondary)

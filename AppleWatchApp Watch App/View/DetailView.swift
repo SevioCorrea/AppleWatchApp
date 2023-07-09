@@ -14,6 +14,7 @@ struct DetailView: View {
     let index: Int
     
     @State private var isCreditPresent: Bool = false
+    @State private var isSettingsPresent: Bool = false
 
     // MARK: - Body
     var body: some View {
@@ -37,6 +38,12 @@ struct DetailView: View {
             HStack(alignment: .center) {
                 Image(systemName: "gear")
                     .imageScale(.large)
+                    .onTapGesture {
+                        isSettingsPresent.toggle()
+                    }
+                    .sheet(isPresented: $isSettingsPresent) {
+                        SettingsView()
+                    }
                 
                 Spacer()
                 

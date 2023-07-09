@@ -16,6 +16,7 @@
 		224A62922A5861B100DE9921 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A62912A5861B100DE9921 /* CreditView.swift */; };
 		224A62952A58629800DE9921 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A62942A58629800DE9921 /* HeaderView.swift */; };
 		22574FD62A530EAB00C1D665 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22574FD52A530EAB00C1D665 /* Note.swift */; };
+		22B118F82A5B161500B7FA5F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B118F72A5B161500B7FA5F /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		224A62912A5861B100DE9921 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
 		224A62942A58629800DE9921 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		22574FD52A530EAB00C1D665 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		22B118F72A5B161500B7FA5F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				2247D01D2A506E530029FFE8 /* ContentView.swift */,
 				2217F8962A56F6DB00DCF078 /* DetailView.swift */,
 				224A62912A5861B100DE9921 /* CreditView.swift */,
+				22B118F72A5B161500B7FA5F /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B118F82A5B161500B7FA5F /* SettingsView.swift in Sources */,
 				2247D01E2A506E530029FFE8 /* ContentView.swift in Sources */,
 				224A62952A58629800DE9921 /* HeaderView.swift in Sources */,
 				2217F8972A56F6DB00DCF078 /* DetailView.swift in Sources */,

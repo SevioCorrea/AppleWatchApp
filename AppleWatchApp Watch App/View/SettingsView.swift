@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     // MARK: - Properties
+    @AppStorage("lineCount") var lineCount: Int = 1
 
     // MARK: - Body
     var body: some View {
@@ -17,6 +18,9 @@ struct SettingsView: View {
             HeaderView(title: "Settings")
             
             // Actual Line Count
+            Text("Lines: \(lineCount)".uppercased())
+                .fontWeight(.bold)
+            
             // Slider
         } //: vStack
     }

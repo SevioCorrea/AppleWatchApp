@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     // MARK: - Properties
     @AppStorage("lineCount") var lineCount: Int = 1
+    @State private var value: Float = 1.0
 
     // MARK: - Body
     var body: some View {
@@ -22,7 +23,10 @@ struct SettingsView: View {
                 .fontWeight(.bold)
             
             // Slider
-        } //: vStack
+            Slider(value: $value, in: 1...4, step: 1)
+                .accentColor(.accentColor)
+            
+        } //: VStack
     }
 }
 
